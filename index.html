@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de afazeres pessoal</title>
+    <link rel="stylesheet" href="css/style-index.css">
+</head>
+
+<body>
+    <h1>Lista de afazeres pessoal</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Checked</th>
+                <th>Descrição</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabela-tarefas">
+            <tr class="tarefa">
+                <td><input type="checkbox" name="checkbox" id="box" class="checkbox"></td>
+                <td class="descricao">Comprar pão</td>
+                <td>8/4/2020 - 21:28</td>
+                <td>
+                    <button class="apagar">X</button>
+                </td>
+            </tr>
+            <tr class="tarefa">
+                <td><input type="checkbox" name="checkbox" id="box" class="checkbox"></td>
+                <td class="descricao">Arrumar o gato</td>
+                <td>8/4/2020 - 21:28</td>
+                <td>
+                    <button class="apagar">X</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Insira a tarefa aqui</h2>
+    <form id="formTarefa">
+        <input type="text" name="tarefa" id="tarefa">
+        <button type="submit" id="botao">Adicionar</button>
+    </form>
+
+
+    <script src="js/form.js"></script>
+    <script src="js/removerTarefa.js"></script>
+</body>
+
+</html>
